@@ -9,9 +9,11 @@ def find_pairs(input_array):
     pair_list = list()
 
     while l < r:
-        if (l + r) == 2020:
-            pair_list.append([l, r])
-        elif (l + r) > 2020:
+        if (input_array[l] + input_array[r]) == 2020:
+            pair_list.append([input_array[l], input_array[r]])
+            r -= 1
+            l += 1
+        elif (input_array[l] + input_array[r]) > 2020:
             r -= 1
         else:
             l += 1

@@ -6,8 +6,8 @@ def sort(input_array):
     mergesort(input_array)
 
 def mergesort(input_array):
-    if len(input_array) > 0:
-        left_array = input_array[:len(input_array//2)]
+    if len(input_array) > 1:
+        left_array = input_array[:len(input_array)//2]
         right_array = input_array[len(input_array)//2:]
 
         mergesort(left_array)

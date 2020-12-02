@@ -13,4 +13,4 @@ def get_input(file_name):
             num = int(num)
             input_array.append(num)
 
-    return num
+    return input_array

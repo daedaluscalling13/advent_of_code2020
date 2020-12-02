@@ -11,9 +11,13 @@ def main():
     input_array = get_input("input.txt")
 
     sort(input_array)
+    print(input_array)
 
     pairs_list = find_pairs(input_array)
+    print(pairs_list)
 
     product = max_product(pairs_list)
-
     print(product)
+
+if __name__ == "__main__":
+    main()
